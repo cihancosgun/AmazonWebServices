@@ -1,0 +1,64 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-helloamplify-dev-100917-authRole",
+      "UnauthRoleArn": "arn:aws:iam::006236210086:role/amplify-helloamplify-dev-100917-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::006236210086:role/amplify-helloamplify-dev-100917-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-helloamplify-dev-100917-deployment",
+      "UnauthRoleName": "amplify-helloamplify-dev-100917-unauthRole",
+      "StackName": "amplify-helloamplify-dev-100917",
+      "StackId": "arn:aws:cloudformation:us-east-1:006236210086:stack/amplify-helloamplify-dev-100917/d26b5e00-a8b9-11eb-9f74-0ab3a23e45a7",
+      "AmplifyAppId": "d2dr07gw4kuqrq"
+    }
+  },
+  "api": {
+    "helloamplify": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "description": ""
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "urkfak6v4zaevee5e4reebuno4",
+        "GraphQLAPIEndpointOutput": "https://dlrxh6bovjfyddhk6q7rbhc2oa.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-r2y62ypzxnaolpcqtqtwu72cai"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-helloamplify-dev-100917-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apihelloamplify"
+      },
+      "lastPushTimeStamp": "2021-04-29T07:34:51.015Z",
+      "lastPushDirHash": "Aof9xWqxeXef6UYyIA3khIi+fi0="
+    }
+  },
+  "auth": {
+    "helloamplifya2051a32": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-helloamplify-dev-100917-deployment/amplify-cfn-templates/auth/helloamplifya2051a32-cloudformation-template.yml",
+        "logicalId": "authhelloamplifya2051a32"
+      },
+      "lastPushTimeStamp": "2021-04-29T07:34:51.033Z",
+      "output": {
+        "UserPoolId": "us-east-1_AsNMpNrJD",
+        "AppClientIDWeb": "143svjihaa87drpt82rvu6pbeb",
+        "AppClientID": "4stq9hpk194otl0u5ldejiuej8",
+        "IdentityPoolId": "us-east-1:f35eaae5-6bdf-48c4-a75c-7041b892ef02",
+        "IdentityPoolName": "helloamplifya2051a32_identitypool_a2051a32__dev",
+        "UserPoolName": "helloamplifya2051a32_userpool_a2051a32"
+      },
+      "lastPushDirHash": "rai0SvpEcvx8vuf1FN1ql1QBKG8="
+    }
+  }
+}
